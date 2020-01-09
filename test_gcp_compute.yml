@@ -3,6 +3,7 @@ projects:
   - sparx-sandbox 
 filters:
   - labels.environment=poc
+service_account_file: /tmp/service_account.json
 auth_kind: serviceaccount
 scopes:
  - 'https://www.googleapis.com/auth/cloud-platform'
