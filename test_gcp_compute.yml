@@ -1,9 +1,18 @@
 plugin: gcp_compute
+zones:
+  - us-west1-a
+  - us-west1-b
+  - us-west1-c
+  - us-central1-a
+  - us-central1-b
+  - us-central1-c
+  - us-west2-a
+  - us-west2-b
+  - us-west2-c
 projects:
   - sparx-sandbox 
 filters:
   - labels.environment=poc
-service_account_file: /tmp/service_account.json
 auth_kind: serviceaccount
 scopes:
  - 'https://www.googleapis.com/auth/cloud-platform'
